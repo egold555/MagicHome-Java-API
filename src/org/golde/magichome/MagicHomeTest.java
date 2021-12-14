@@ -10,17 +10,17 @@ public class MagicHomeTest {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		Discovery d = new Discovery();
-		d.scan();
+		d.scan(10000);
 
-		Control c = new Control("192.168.1.217");
+		//Control c = new Control("192.168.1.217");
 		//c.setColor(Color.RED);
 		//c.setWhites(0, 255);
 
-		for(int i = 0; i < 255; i++) {
-			Color color = new Color(Color.HSBtoRGB(i / 255F, 1, 1));
-			c.setColor(color);
-			Thread.sleep(20);
-		}
+//		for(int i = 0; i < 255; i++) {
+//			Color color = new Color(Color.HSBtoRGB(i / 255F, 1, 1));
+//			c.setColor(color);
+//			Thread.sleep(20);
+//		}
 
 	}
 
